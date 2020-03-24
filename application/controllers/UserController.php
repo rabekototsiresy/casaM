@@ -49,7 +49,7 @@ class UserController
       $_SESSION['username'] = $_POST['username'];
       //test if user connected
       if (isset($_SESSION['username'])) {
-        \app\Http::redirect('UserController', 'dashboard');
+        \app\Http::redirect('Home', 'dashboard');
       } else {
         \app\Render::display('404/error');
       }
@@ -58,14 +58,7 @@ class UserController
     }
   }
 
-  public function dashboard()
-  {
-    session_start();
-    if (isset($_SESSION['username'])) {\app\Render::display('dashboard'  ); 
-    } else {
-      \app\Http::redirect('UserController', 'login');
-    }
-  }
+  
 
   public function logout()
   {

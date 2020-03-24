@@ -1,32 +1,28 @@
-<div class="container-fluid p-0 m-0">
-	
-	<nav class="navbar navbar-expand-lg navbar-light bg-success">
+<div class="container">
   
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-     
-    </ul>
+<div class="grid-container ">
+    <a href="http://localhost/casaM/index.php?controller=Clients&task=add" class="bg-info gereLesMembresLink text-center">
+    <span class="fa fa-user fa-3x text-center"></span>
+    <div class="gereLesMembres bg-info m-1" href="">
+      Gere les membres 
+    </div></a>
+    <div class="ajout ">
+      <div class="Caisse m-1 bg-info">Caisse</div>
+      <div class="ajouter m-1 bg-danger">Ajouter</div>
+      <div class="Magasin m-1 bg-warning"> Magasin</div>
+      <div class="vente m-1 bg-danger"> Vente</div>
+    </div>
+    <div class="etatDuVente bg-info m-1"> Etat du vente</div>
+    <div class="traiteur ">
+      <div class="demandeTraiteur m-1 bg-warning">Demande traiteur</div>
+      <div class="serviceTraiteur m-1 bg-dark">Serive traiteur</div>
+    </div>
+    <div class="gestionClient bg-warning m-1">Gestion client</div>
+    <div class="etatCaisseClient bg-info m-1">Etat caise client</div>
+    <div class="stockMatPremi bg-dark m-1">Stock matiere premiere</div>
+    <div class="stockProduitFini bg-warning m-1">Stock produit finis</div>
+  </div>
 
-    <div class="mx-auto">
-	  	<a href="#" class="navbar-brand">Navbar</a>
-	</div>
-    
-  <?= isset($_SESSION['username']) ? $_SESSION['username'] ."- <a href='http://localhost/casaM/index.php?controller=UserController&task=logout'>Log Out </a>" : ''  ?>
-  </div>
-</nav>
-</div>
-<div class="container-fluid">
-  <div class="row">
-    
-  </div>
+
 </div>

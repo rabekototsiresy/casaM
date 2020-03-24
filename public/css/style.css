@@ -1,7 +1,7 @@
 html,
 body {
     margin: 0;
-    padding: 0;
+    padding-bottom: 50px;
 }
 
 body {
@@ -88,4 +88,123 @@ input:focus {
     background-color: #e9ecef;
     border: 1px solid #ced4da;
     border-radius: 0;
+}
+
+
+/*
+*Style acceuil
+*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1.5fr;
+    grid-template-areas: "gereLesMembres ajout etatDuVente traiteur""gestionClient etatCaisseClient stockMatPremi stockProduitFini"". . . .";
+}
+
+.gereLesMembres {
+    grid-area: gereLesMembres;
+}
+
+.gereLesMembresLink {
+    height: 200px;
+    padding-top: 17%;
+    font-family: inherit;
+    color: white;
+}
+
+.gereLesMembresLink:hover {
+    height: 200px;
+    padding-top: 17%;
+    font-family: inherit;
+    color: white;
+    text-decoration: none;
+}
+
+.ajout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Caisse ajouter""Magasin vente";
+    grid-area: ajout;
+}
+
+.Caisse {
+    grid-area: Caisse;
+}
+
+.ajouter {
+    grid-area: ajouter;
+}
+
+.Magasin {
+    grid-area: Magasin;
+}
+
+.vente {
+    grid-area: vente;
+}
+
+.etatDuVente {
+    grid-area: etatDuVente;
+}
+
+.traiteur {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "demandeTraiteur""serviceTraiteur";
+    grid-area: traiteur;
+}
+
+.demandeTraiteur {
+    grid-area: demandeTraiteur;
+}
+
+.serviceTraiteur {
+    grid-area: serviceTraiteur;
+}
+
+.gestionClient {
+    grid-area: gestionClient;
+}
+
+.etatCaisseClient {
+    grid-area: etatCaisseClient;
+}
+
+.stockMatPremi {
+    grid-area: stockMatPremi;
+}
+
+.stockProduitFini {
+    grid-area: stockProduitFini;
+}
+
+.maincontainer {
+    margin-top: 10%;
+}
+
+
+/*
+  *end style acceuil
+  */
+
+
+/*
+  *style clients
+  */
+
+.mainClients {
+    margin-top: 100px;
+}
+
+
+/**
+*item style
+*/
+
+.itemListFixed {
+    height: 70vh;
+    overflow: scroll;
 }
