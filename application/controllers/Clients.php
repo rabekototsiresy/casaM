@@ -4,6 +4,10 @@ class Clients{
   public function add()
   {
     session_start();
-    \app\Render::display('clients/add');
+    if (isset($_SESSION['username'])) {
+      \app\Render::display('clients/add');
+    } else {
+      \app\Http::redirect('UserController', 'login');
+    }
   }
 }

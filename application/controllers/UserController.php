@@ -22,7 +22,7 @@ class UserController
   public function register()
   {
     //display page register
-    if (isset($_SESSION['username'])) {
+    if (isset($_SESSION)) {
       \app\Render::display('register');
     } else {
       \app\Http::redirect('UserController', 'login');
