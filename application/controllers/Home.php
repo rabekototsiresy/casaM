@@ -6,7 +6,7 @@ class Home{
     session_start();
     if (isset($_SESSION['username'])) {\app\Render::display('dashboard'  ); 
     } else {
-      \app\Http::redirect('UserController', 'login');
+      \app\Http::redirect('User', 'login');
     }
   }
 }

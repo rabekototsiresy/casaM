@@ -17,7 +17,7 @@
      <?= isset($_SESSION['username']) ? '<b class="navbar-text">'.$_SESSION['username'].'</b>' : ''?>
     </span>
     <span class="navbar-text px-3">
-    <?= isset($_SESSION['username']) ? "<a href='http://localhost/casaM/index.php?controller=UserController&task=logout'>Log Out </a>" : ''  ?>
+    <?= isset($_SESSION['username']) ? "<a href='http://localhost/casaM/index.php?controller=User&task=logout'>Log Out </a>" : ''  ?>
     </span>
   </div>
 </nav>

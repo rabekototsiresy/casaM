@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteRule http://localhost/casaM http://localhost/casaM/index.php?controller=UserController&task=login [NC,L]
+
+</IfModule>

@@ -2,7 +2,7 @@
   
 
 <div class="grid-container ">
-    <a href="http://localhost/casaM/index.php?controller=Clients&task=add" class="bg-info gereLesMembresLink text-center">
+    <a href="http://localhost/casaM/index.php?controller=User&task=add" class="bg-info gereLesMembresLink text-center">
     <span class="fa fa-user fa-3x text-center"></span>
     <div class="gereLesMembres bg-info m-1" href="">
       Gere les membres 
